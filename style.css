@@ -149,6 +149,7 @@ ul.main-nav > li > a:hover {
   text-decoration-line: none;
 }
 
+/* 
 body > ul > li:nth-child(1) > a:hover > i.fa-home {
   color: #089df0;
 }
@@ -157,13 +158,13 @@ body > ul > li:nth-child(2) > a:hover > i.fa-file-text-o {
   color: #5ceba1;
 }
 
-body > ul > li:nth-child(3) > a:hover > i.fa-file-code-o {
+body > ul > li:nth-child(3) > a:hover > i.fa-youtube-play {
   color: #fc5d76;
 }
 
-body > ul > li:nth-child(4) > a:hover > i.fa-flask {
+body > ul > li:nth-child(4) > a:hover > i.fa-rss {
   color: #fbb44b;
-}
+} */
 
 
 /* ==========================================================================
