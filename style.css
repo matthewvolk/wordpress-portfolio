@@ -1,0 +1,197 @@
+/*
+Theme Name: mjvolk
+Theme URI: http://mjvolk.com
+Version: 1.0
+Author: Matthew Volk
+Author URI: http://mjvolk.com
+Description: Simple theme to host my blog, YouTube content, portfolio, resume, and everything else about me.
+Text Domain: mjvolk
+*/
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
+
+
+/* ==========================================================================
+   Site-wide Highlighting
+   ========================================================================== */
+
+::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: #ffff00;
+}
+
+::selection {
+  color: #000; 
+  background: #ffff00;
+}
+
+
+/* ==========================================================================
+   Heading and Paragraph styling
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+ul.main-nav {
+  padding: 0;
+  list-style: none;
+
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Take Full Width of Page */
+  width: 100%;
+
+  /* Navigation Anchor Top of Page */
+  margin-top: 0;
+
+  /* Nav Box Shadow Bottom */
+  -webkit-box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.65);
+
+  /* Navigation Background Color */
+  background-color: #292c37;
+}
+
+ul.main-nav > li > a {
+  /* Create Box for Clickable Area */
+  display: table-cell;
+
+  /* Nav Link Color */
+  color: #bfc0c3;
+
+  /* Height and Width of Table Cell */
+  height: 4em;           
+  width: 10em;
+  
+  /* Center Content within Table Cell */
+  text-align: center;
+  vertical-align: middle;
+
+  /* Space Icons Above Link Text */
+  line-height: 1.9em;
+
+  /* Set Font Size & Weight */
+  font-size: 1.125em;
+  font-weight: 300;
+}
+
+/* Fixes Navigation Table View for Small Screens */
+@media (max-width: 750px) {
+  ul.main-nav {
+    min-width: 50%; 
+  }
+}
+
+/* Fixes Table Height for Small Screens */
+@media (max-width: 540px) {
+  ul.main-nav > li > a {
+    height: 2em;
+  }
+}
+
+/* Fixes weird Position between tablet and mobile */
+@media screen and (max-width: 719px) and (min-width: 540px) {
+  ul.main-nav > li > a {
+    width: 7em;
+  }
+}
+
+/* Fixes stacked view on phones smaller than 320px */
+@media screen and (max-width: 320px) {
+  ul.main-nav > li > a {
+    width: 6em;
+  }
+}
+
+/* Icon Positioning Inline on Mobile, Block on Desktop */
+.fa {
+  display: block;
+  line-height: auto;
+}
+
+@media (max-width: 540px) {
+  .fa {
+    display: inline;
+    line-height: 2em; 
+    padding-right: 12px;
+  }
+}
+
+/* ICON COLOR/LINK COLOR ON HOVER - NAVIGATION */
+ul.main-nav > li > a:hover {
+  background-color: #21242d;
+  color: white;
+  text-decoration-line: none;
+}
+
+body > ul > li:nth-child(1) > a:hover > i.fa-home {
+  color: #089df0;
+}
+
+body > ul > li:nth-child(2) > a:hover > i.fa-file-text-o {
+  color: #5ceba1;
+}
+
+body > ul > li:nth-child(3) > a:hover > i.fa-file-code-o {
+  color: #fc5d76;
+}
+
+body > ul > li:nth-child(4) > a:hover > i.fa-flask {
+  color: #fbb44b;
+}
+
+
+/* ==========================================================================
+   Link Styles
+   ========================================================================== */
+a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000;
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+div.main-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
