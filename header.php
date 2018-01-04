@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><?php bloginfo('name'); ?></title>
   <script src="https://use.fontawesome.com/141f709aa0.js"></script>
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
+
   <?php wp_head(); ?>
 </head>
 
