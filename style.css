@@ -85,7 +85,7 @@ ul.main-nav > li > a {
   color: #bfc0c3;
 
   /* Height and Width of Table Cell */
-  height: 4em;           
+  height: 4.5em;           
   width: 10em;
   
   /* Center Content within Table Cell */
@@ -93,7 +93,7 @@ ul.main-nav > li > a {
   vertical-align: middle;
 
   /* Space Icons Above Link Text */
-  line-height: 1.9em;
+  line-height: 1.75em;
 
   /* Set Font Size & Weight */
   font-size: 1.125em;
