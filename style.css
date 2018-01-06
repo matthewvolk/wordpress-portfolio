@@ -74,7 +74,7 @@ ul.main-nav {
   box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.65);
 
   /* Navigation Background Color */
-  background-color: #292c37;
+  background-color: #000;
 }
 
 ul.main-nav > li > a {
@@ -85,7 +85,7 @@ ul.main-nav > li > a {
   color: #bfc0c3;
 
   /* Height and Width of Table Cell */
-  height: 4.5em;           
+  height: 4.25em;           
   width: 10em;
   
   /* Center Content within Table Cell */
@@ -144,26 +144,26 @@ ul.main-nav > li > a {
 
 /* ICON COLOR/LINK COLOR ON HOVER - NAVIGATION */
 ul.main-nav > li > a:hover {
-  background-color: #21242d;
+  background-color: #1a1a1a;
   color: white;
   text-decoration-line: none;
 }
 
 /* 
 body > ul > li:nth-child(1) > a:hover > i.fa-home {
-  color: #089df0;
+  color: #ffff00;
 }
 
 body > ul > li:nth-child(2) > a:hover > i.fa-file-text-o {
-  color: #5ceba1;
+  color: #ffff00;
 }
 
-body > ul > li:nth-child(3) > a:hover > i.fa-youtube-play {
-  color: #fc5d76;
+body > ul > li:nth-child(4) > a:hover > i.fa-youtube-play {
+  color: #ffff00;
 }
 
-body > ul > li:nth-child(4) > a:hover > i.fa-rss {
-  color: #fbb44b;
+body > ul > li:nth-child(3) > a:hover > i.fa-rss {
+  color: #ffff00;
 } */
 
 
