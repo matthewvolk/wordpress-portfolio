@@ -130,7 +130,10 @@ body > div.jumbotron.jumbotron-fluid > div > i:hover {
    ========================================================================== */
 
 body > div.container > div.row > div.col-sm-6 > div.card {
-  border: none;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
   transition: box-shadow .25s;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -157,6 +160,9 @@ body > div.container > div.row > div.col-sm-6 > div.card:hover {
 body > div.container > div.row > div.col-sm-6 > div.card > img {
   height: 100%;
   object-fit: contain;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -166,7 +172,6 @@ body > div.container > div.row > div.col-sm-6 > div.card > img {
 
 footer {
   display: inline-block;
-  margin-top: 60px;
   bottom: 0;
   width: 100%;
   height: 60px;
