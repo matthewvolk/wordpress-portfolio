@@ -1,6 +1,8 @@
   <footer class="site-footer">
     <div class="container-fluid">
-      <p>&copy; Matthew Volk, <?php echo date('Y'); ?></p> 
+      <p class="mb-0">
+        &copy; Matthew Volk, <?php echo date('Y'); ?>
+      </p> 
     </div>
   </footer>
   

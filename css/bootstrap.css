@@ -2296,18 +2296,18 @@ fieldset[disabled] a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #0b1a31;
-  border-color: #0b1a31; }
+  background-color: #000000;
+  border-color: #000000; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #040912;
-    border-color: #020407; }
+    background-color: rgb(26, 26, 26);
+    border-color: #1a1a1a, 2%); }
   .btn-dark:focus, .btn-dark.focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(11, 26, 49, 0.5);
-            box-shadow: 0 0 0 0.2rem rgba(11, 26, 49, 0.5); }
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
-    background-color: #0b1a31;
-    border-color: #0b1a31; }
+    background-color: #343434;
+    border-color: #343434; }
   .btn-dark:not([disabled]):not(.disabled):active, .btn-dark:not([disabled]):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;

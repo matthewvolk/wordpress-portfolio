@@ -6,3 +6,7 @@ function mjvolk_resources() {
 }
 
 add_action('wp_enqueue_scripts', 'mjvolk_resources');
+
+add_theme_support( 'post-thumbnails' );
+
+?>
