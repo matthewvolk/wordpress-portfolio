@@ -1,3 +1,5 @@
+<div class="container">
+
 <?php
 
 get_header();

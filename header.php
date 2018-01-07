@@ -13,14 +13,16 @@
 
 <body <?php body_class(); ?>>
 
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto mr-auto">
+      <a class="nav-item nav-link active" href="<?php echo home_url(); ?>">Home</a>
+      <a class="nav-item nav-link" href="#">Resumé</a>
+    </div>
+  </div>
+</nav>
 
-<ul class="main-nav" role="navigation">
-    <li><a href="<?php echo home_url(); ?>"><i class="fa fa-home"></i>Home</a></li>
-    <li><a href="#"><i class="fa fa-file-text-o"></i>Resume</a></li>
-    <li><a href="#"><i class="fa fa-rss"></i>Articles</a></li>
-    <li><a href="#"><i class="fa fa-youtube-play"></i>Videos</a></li>
-</ul>
 
 
 
-<div class="main-container">
+
