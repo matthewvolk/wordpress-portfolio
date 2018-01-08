@@ -121,7 +121,7 @@ body > div.jumbotron.jumbotron-fluid > div > i:hover {
 
 @media only screen and (max-width: 436px) {
   body > div.jumbotron.jumbotron-fluid > div > i {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 

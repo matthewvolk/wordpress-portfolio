@@ -44,7 +44,7 @@
     <?php 
         endwhile;
         else :
-        echo '<p>Oops! No content found</p>';
+        echo '<p class="ml-auto mr-auto">Nothing here yet, come back soon!</p>';
     endif; ?>
 
 </div>
