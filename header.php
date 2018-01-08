@@ -20,7 +20,7 @@
     </button>
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
-        <ul class="navbar-nav ml-5">
+        <ul class="navbar-nav ml-6">
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>

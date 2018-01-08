@@ -1,21 +1,30 @@
-<div class="container-fluid">
+
 
 <?php
 
-get_header();
+get_header(); ?>
 
-  if (have_posts()) :
+<div class="jumbotron jumbotron-fluid jumbotron-post-page py-5" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+  <div class="container py-5">
+    <h1><span id="post-title-white-highlight"><?php the_title() ?></span></h1>
+    
+  </div>
+</div>
+
+<div id="post-container" class="container">
+
+  <?php  
+    if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 
-          <h5><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
           <p><?php the_content() ?></p>
 
-<?php 
+  <?php 
     endwhile;
     else :
       echo '<p>Oops! No content found</p>';
-  endif;
+  endif; ?>
 
-get_footer();
+<?php 
 
-?>
+get_footer();?>

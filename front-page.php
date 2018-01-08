@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid pt-1 pb-4">
+<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4">
   <div class="container">
-    <h1 class="display-4">Hi, I'm Matt.</h1>
+    <h1 class="display-5">Hi, I'm Matt.</h1>
     <p class="lead">I write computer programs using the following technologies:</p>
     <i class="devicon-html5-plain pr-3 pb-3"></i>
     <i class="devicon-css3-plain pr-3 pb-3"></i>
@@ -32,7 +32,7 @@
 
             <div class="col-sm-6">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="<?php the_post_thumbnail(); ?>
+                    <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>">
                     <div class="card-body">
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
                         <p class="card-text"><?php the_content() ?></p>

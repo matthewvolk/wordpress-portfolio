@@ -1,3 +1,5 @@
+</div> <!-- Main Container -->
+  
   <footer class="site-footer mt-2">
     <div class="container-fluid">
       <p class="mb-0">
@@ -6,7 +8,7 @@
     </div>
   </footer>
   
-  </div> <!-- Main Container -->
+
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <?php wp_footer() ?>

@@ -8,8 +8,36 @@ Description: Simple theme to host my blog, YouTube content, portfolio, resume, a
 Text Domain: mjvolk
 */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+/* ==========================================================================
+   >>> TABLE OF CONTENTS
+   ========================================================================== 
 
+   Imports
+   Bootstrap Overrides/Addons
+   Site Wide Highlighting
+   Navigation
+   Jumbotron
+   Post Loop Formatting
+   Footer
+
+   ========================================================================== */
+
+/* ==========================================================================
+  Imports
+  ========================================================================== */
+
+/* Google Fonts - Nunito Sans, 400 700 */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700');
+
+
+
+/* ==========================================================================
+  Bootstrap Overrides/Addons
+  ========================================================================== */
+
+.ml-6,
+.mx-6 {
+  margin-left: 3.75rem !important; }
 
 /* ==========================================================================
    Site-wide Highlighting
@@ -31,6 +59,7 @@ Text Domain: mjvolk
 
 #collapsingNavbar2 > ul > li.nav-item > a {
   font-size: 1.1em;
+  font-family: 'Nunito Sans', sans-serif;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -91,17 +120,28 @@ Text Domain: mjvolk
    Jumbotron
    ========================================================================== */
 
-body > div.jumbotron.jumbotron-fluid {
+body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
   background-color: #000;
 
   color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
 
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
-body > div.jumbotron.jumbotron-fluid > div > i {
+body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > h1 {
+  font-weight: 700;
+}
+
+body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > p {
+  font-weight: 300;
+}
+
+
+body > div.jumbotron.jumbotron-fluid.jumbotron-front-page > div > i {
   font-size: 2em;
   display: inline-block;
   vertical-align: middle;
@@ -119,11 +159,6 @@ body > div.jumbotron.jumbotron-fluid > div > i:hover {
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-@media only screen and (max-width: 436px) {
-  body > div.jumbotron.jumbotron-fluid > div > i {
-    font-size: 1.25em;
-  }
-}
 
 /* ==========================================================================
    Post Loop Formatting
@@ -136,6 +171,9 @@ body > div.container > div.row > div.col-sm-6 > div.card {
   border: 0px solid #000000;
   transition: box-shadow .25s;
   font-family: 'Nunito Sans', sans-serif;
+  -webkit-box-shadow: 0px 0px 7px 0px rgb(135, 135, 135);
+  -moz-box-shadow: 0px 0px 7px 0px rgb(135, 135, 135);
+  box-shadow: 0px 0px 7px 0px rgb(135, 135, 135);
 }
 
 body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title {
@@ -152,9 +190,9 @@ body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card
 }
 
 body > div.container > div.row > div.col-sm-6 > div.card:hover {
-  -webkit-box-shadow: 0 0 11px rgba(33,33,33,.2);
-  -moz-box-shadow: 0 0 11px rgba(33,33,33,.2);
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
 body > div.container > div.row > div.col-sm-6 > div.card > img {
@@ -165,6 +203,17 @@ body > div.container > div.row > div.col-sm-6 > div.card > img {
   -webkit-border-radius: 10px 10px 0px 0px;
 }
 
+/* ACTUAL POST PAGE */
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div {
+  color: rgb(0, 0, 0);
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+}
+
+#post-title-white-highlight {
+  background-color: #fff;
+  font-weight: 700;
+}
 
 /* ==========================================================================
    Footer
