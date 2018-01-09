@@ -6,8 +6,13 @@ get_header(); ?>
 
 <div class="jumbotron jumbotron-fluid jumbotron-post-page py-5" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
   <div class="container py-5">
-    <h1><span id="post-title-white-highlight"><?php the_title() ?></span></h1>
-    
+    <div class="padded-multiline">
+      <h1>
+        <strong>
+          <?php the_title() ?></span>
+        </strong>
+      </h1>
+    </div>
   </div>
 </div>
 

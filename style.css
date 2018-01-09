@@ -195,7 +195,7 @@ body > div.container > div.row > div.col-sm-6 > div.card:hover {
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
-body > div.container > div.row > div.col-sm-6 > div.card > img {
+body > div.container > div > div.col-sm-6 > div > a > img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px 10px 0px 0px;
@@ -204,15 +204,22 @@ body > div.container > div.row > div.col-sm-6 > div.card > img {
 }
 
 /* ACTUAL POST PAGE */
-body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div {
-  color: rgb(0, 0, 0);
-  font-family: 'Nunito Sans', sans-serif;
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div {
   text-align: center;
 }
 
-#post-title-white-highlight {
-  background-color: #fff;
-  font-weight: 700;
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div > h1 > strong {
+  display: inline;
+  background: #000;
+  color: white; 
+  padding: 0.0015rem 0.75rem;
+  line-height: 0.0015em;
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* ==========================================================================
