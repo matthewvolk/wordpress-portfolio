@@ -18,6 +18,7 @@ Text Domain: mjvolk
    Navigation
    Jumbotron
    Post Loop Formatting
+    Post Page Header Text
    Footer
 
    ========================================================================== */
@@ -203,7 +204,9 @@ body > div.container > div > div.col-sm-6 > div > a > img {
   -webkit-border-radius: 10px 10px 0px 0px;
 }
 
-/* ACTUAL POST PAGE */
+/* ----------------------------
+   Post Page Header Text
+   ---------------------------- */
 body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div {
   text-align: center;
 }
