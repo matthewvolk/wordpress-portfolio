@@ -16,7 +16,7 @@ get_header(); ?>
   </div>
 </div>
 
-<div id="post-container" class="container">
+<div id="post-container" class="container-post-page">
 
   <?php  
     if (have_posts()) :

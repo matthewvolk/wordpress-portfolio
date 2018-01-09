@@ -225,6 +225,29 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div > h1 >
   font-family: 'Nunito Sans', sans-serif;
 }
 
+/* ----------------------------
+   Post Page Content Container
+   ---------------------------- */
+
+.container-post-page {
+width: 100%;
+padding: 15px 15px 30px 15px;
+margin-right: auto;
+margin-left: auto;
+font-size: 1.15rem; }
+@media (min-width: 576px) {
+  .container-post-page {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container-post-page {
+    max-width: 540px; } }
+@media (min-width: 992px) {
+  .container-post-page {
+    max-width: 540px; } }
+@media (min-width: 1200px) {
+  .container-post-page {
+    max-width: 720px; } }
+
 /* ==========================================================================
    Footer
    ========================================================================== */
