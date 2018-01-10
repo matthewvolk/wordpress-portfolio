@@ -20,6 +20,8 @@
     <i class="devicon-linux-plain pr-3 pb-3"></i>
     <i class="devicon-ruby-plain-wordmark pr-3 pb-3"></i>
     <i class="devicon-rails-plain-wordmark pr-3 pb-3"></i>
+    <i class="devicon-python-plain"></i>
+
 
   </div>
 </div>
