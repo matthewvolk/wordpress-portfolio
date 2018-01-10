@@ -2,7 +2,7 @@
 
 <div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4">
   <div class="container">
-    <h1 class="display-5">Hi, I'm Matt.</h1>
+    <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I write computer programs using the following technologies:</p>
     <i class="devicon-html5-plain pr-3 pb-3"></i>
     <i class="devicon-css3-plain pr-3 pb-3"></i>
