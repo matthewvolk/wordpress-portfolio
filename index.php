@@ -21,7 +21,7 @@ get_header(); ?>
   <?php  
     if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-          <p class="text-muted"><small><?php the_time('l, F jS, Y') ?></small></p>
+          <p class="text-muted"><small><?php the_modified_date('l, F jS, Y') ?></small></p>
           <p><?php the_content() ?></p>
 
   <?php 
