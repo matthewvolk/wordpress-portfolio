@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,6 @@
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
                   <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
-        else:
-            return;
         endif; 
   ?>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
