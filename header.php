@@ -8,12 +8,13 @@
   <script src="https://use.fontawesome.com/141f709aa0.js"></script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
                   <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
         endif; 
   ?>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  
 
   <?php wp_head(); ?>
 </head>
