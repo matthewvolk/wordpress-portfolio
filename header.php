@@ -9,7 +9,8 @@
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
   <?php if ( is_front_page() ):
-            echo '<meta property="og:image" content="<?php echo get_stylesheet_directory_uri();?>/img/open-graph.png" />';
+            echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
+                  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri();?>/img/open-graph.png" />';
         else:
             return;
         endif; 
