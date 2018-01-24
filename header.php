@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
-                  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri();?>/img/open-graph.png" />';
+                  <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
         else:
             return;
         endif; 
