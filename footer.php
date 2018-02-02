@@ -8,9 +8,6 @@
     </div>
   </footer>
   
-
-
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
   <?php wp_footer() ?>
 </body>
 </html>

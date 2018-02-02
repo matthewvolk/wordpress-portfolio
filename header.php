@@ -4,7 +4,10 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><?php bloginfo('name'); ?></title>
+  <title>
+    <?php is_front_page() ? bloginfo('description') : wp_title(''); ?> |
+    <?php bloginfo('name'); ?>
+  </title>
   <script src="https://use.fontawesome.com/141f709aa0.js"></script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
