@@ -12,14 +12,15 @@ Text Domain: mjvolk
    >>> TABLE OF CONTENTS
    ========================================================================== 
 
-   Imports
-   Bootstrap Overrides/Addons
-   Site Wide Highlighting
-   Navigation
-   Jumbotron
-   Post Loop Formatting
-    Post Page Header Text
-   Footer
+   |-- Imports
+   |-- Bootstrap Overrides/Addons
+   |-- Site Wide Highlighting
+   |-- Navigation
+   |-- Jumbotron
+   |-- Post Loop Formatting
+       |-- Post Page Header Text
+       |-- Post Page Content Container
+   |-- Footer
 
    ========================================================================== */
 
@@ -232,6 +233,58 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div > h1 >
 /* ----------------------------
    Post Page Content Container
    ---------------------------- */
+
+#post-container {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#post-container > h1 {
+  font-weight: 700;
+}
+
+#post-container > h2 {
+  font-weight: 700;
+}
+
+#post-container > p > a {
+  color: #000;
+  font-weight: 700;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+#post-container > p > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ffff00;
+  height: 15px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#post-container > p > a:hover {
+  text-decoration-line: none;
+}
+
+#post-container > p > a:hover:before, 
+#post-container > p > a:focus:before,
+#post-container > p > a:active:before {
+  right: 0;
+}
 
 .container-post-page {
 width: 100%;
