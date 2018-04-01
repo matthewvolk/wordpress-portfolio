@@ -40,7 +40,7 @@
         </ul>
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item"><a class="nav-link" href="https://github.com/matthewvolk"><i class="fa fa-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://twitter.com/thisisntaresume"><i class="fa fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/mjvolk"><i class="fa fa-linkedin"></i></a></li>
         </ul>
     </div>
 </nav>

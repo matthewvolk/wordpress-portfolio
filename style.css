@@ -70,7 +70,7 @@ Text Domain: mjvolk
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0px 0px 0px 1px transparent;
   position: relative;
   overflow: hidden;
 }
