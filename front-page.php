@@ -4,23 +4,18 @@
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I write computer programs using the following technologies:</p>
-    <i class="devicon-html5-plain pr-3 pb-3"></i>
-    <i class="devicon-css3-plain pr-3 pb-3"></i>
-    <i class="devicon-bootstrap-plain pr-3 pb-3"></i>
-    <i class="devicon-angularjs-plain pr-3 pb-3"></i>
-    <i class="devicon-react-original pr-3 pb-3"></i>
-    <i class="devicon-javascript-plain pr-3 pb-3"></i>
-    <i class="devicon-nodejs-plain pr-3 pb-3"></i>
-    <i class="devicon-git-plain pr-3 pb-3"></i>
-    <i class="devicon-gulp-plain pr-3 pb-3"></i>
-    <i class="devicon-babel-plain pr-3 pb-3"></i>
-    <i class="devicon-express-original pr-3 pb-3"></i>
-    <i class="devicon-java-plain pr-3 pb-3"></i>
-    <i class="devicon-amazonwebservices-original pr-3 pb-3"></i>
-    <i class="devicon-linux-plain pr-3 pb-3"></i>
-    <i class="devicon-ruby-plain-wordmark pr-3 pb-3"></i>
-    <i class="devicon-rails-plain-wordmark pr-3 pb-3"></i>
-    <i class="devicon-python-plain pr-3 pb-3"></i>
+    <i class="devicon-javascript-plain px-2 py-2"></i>
+    <i class="devicon-react-original px-2 py-2"></i>
+    <i class="devicon-nodejs-plain px-2 py-2"></i>
+    <i class="devicon-express-original px-2 py-2"></i>
+    <i class="devicon-python-plain px-2 py-2"></i>
+    <i class="devicon-linux-plain px-2 py-2"></i>
+    <i class="devicon-git-plain px-2 py-2"></i>
+    <i class="devicon-gulp-plain px-2 py-2"></i>
+    <i class="devicon-babel-plain px-2 py-2"></i>
+    <i class="devicon-amazonwebservices-original px-2 py-2"></i>
+    <i class="devicon-ruby-plain-wordmark px-2 py-2"></i>
+    <i class="devicon-rails-plain-wordmark px-2 py-2"></i>
 
 
   </div>

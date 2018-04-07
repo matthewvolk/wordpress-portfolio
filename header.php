@@ -8,7 +8,7 @@
     <?php is_front_page() ? bloginfo('description') : wp_title(''); ?> |
     <?php bloginfo('name'); ?>
   </title>
-  <script src="https://use.fontawesome.com/141f709aa0.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -17,6 +17,16 @@
                   <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
         endif; 
   ?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105119151-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105119151-2');
+  </script>
+
   
 
   <?php wp_head(); ?>
@@ -24,14 +34,12 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-dark navbar-expand bg-dark py-0 my-0 justify-content-between">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+
+<nav class="navbar navbar-dark navbar-expand sticky-top bg-dark py-0 my-0 mx-0">
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
         <ul class="navbar-nav ml-7">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
             <li class="nav-item">
@@ -39,8 +47,8 @@
             </li>
         </ul>
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item"><a class="nav-link" href="https://github.com/matthewvolk"><i class="fa fa-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/mjvolk"><i class="fa fa-linkedin"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </div>
 </nav>

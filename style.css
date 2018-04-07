@@ -39,7 +39,7 @@ Text Domain: mjvolk
 
 .ml-6,
 .mx-6 {
-  margin-left: 3.75rem !important; }
+  margin-left: 4.25rem !important; }
 
 .ml-7,
 .mx-7 {
@@ -64,7 +64,7 @@ Text Domain: mjvolk
    ========================================================================== */
 
 #collapsingNavbar2 > ul > li.nav-item > a {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: 'Nunito Sans', sans-serif;
   display: inline-block;
   vertical-align: middle;
@@ -196,9 +196,9 @@ body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card
 }
 
 body > div.container > div.row > div.col-sm-6 > div.card:hover {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
 }
 
 body > div.container > div > div.col-sm-6 > div > a > img {
@@ -212,6 +212,13 @@ body > div.container > div > div.col-sm-6 > div > a > img {
 /* ----------------------------
    Post Page Header Text
    ---------------------------- */
+
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 {
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+}
+
 body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div {
   text-align: center;
 }
