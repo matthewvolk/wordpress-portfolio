@@ -120,6 +120,14 @@ Text Domain: mjvolk
   color: #fff;
 }
 
+#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a {
+  color: rgb(255, 255, 255);
+}
+
+#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a:hover {
+  text-decoration: underline;
+}
+
 #collapsingNavbar2 > ul.nav.navbar-nav.flex-row > li > a {
   font-size: 1.5em;
   display: inline-block;
