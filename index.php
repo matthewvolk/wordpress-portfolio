@@ -4,6 +4,7 @@
 
 get_header(); ?>
 
+
 <div class="jumbotron jumbotron-fluid jumbotron-post-page py-5" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-position: center;">
   <div class="container py-5">
     <div class="padded-multiline">
@@ -15,6 +16,7 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
 
 <div id="post-container" class="container-post-page">
 
