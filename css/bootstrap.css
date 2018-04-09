@@ -2300,8 +2300,8 @@ fieldset[disabled] a.btn {
   border-color: #000000; }
   .btn-dark:hover {
     color: #fff;
-    background-color: rgb(26, 26, 26);
-    border-color: #1a1a1a, 2%); }
+    background-color: rgb(46, 46, 46);
+    border-color: #1a1a1a, 2%; }
   .btn-dark:focus, .btn-dark.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.5); }
