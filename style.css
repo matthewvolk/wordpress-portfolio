@@ -322,7 +322,7 @@ font-size: 1.15rem; }
    ========================================================================== */
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   display: inline-block;
   bottom: 0;
   width: 100%;
