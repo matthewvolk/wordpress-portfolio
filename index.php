@@ -10,7 +10,7 @@ get_header(); ?>
     <div class="padded-multiline">
       <h1>
         <strong>
-          <?php the_title() ?></span>
+          <?php the_title() ?>
         </strong>
       </h1>
     </div>

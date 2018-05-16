@@ -80,6 +80,12 @@ Text Domain: mjvolk
    Navigation
    ========================================================================== */
 
+body > nav {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
 #collapsingNavbar2 > ul > li.nav-item > a {
   font-size: 1em;
   font-family: 'Nunito Sans', sans-serif;
