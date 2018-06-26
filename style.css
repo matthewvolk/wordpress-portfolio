@@ -257,15 +257,22 @@ body > div.container > div > div.col-sm-6 > div > a > img {
   box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
 }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div {
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div {
   text-align: center;
 } 
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div > h1 {
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
   font-weight: 600;
 }
 
- body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 {
+@media (max-width: 576px) { 
+  body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page {
   /* display: inline;
   background: #000; */
   color: white;

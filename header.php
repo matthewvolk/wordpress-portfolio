@@ -43,7 +43,7 @@
                 <a class="nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthewApril2018.pdf">Resumé</a>
+                <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthewJuly2018.pdf">Resumé</a>
             </li>
         </ul>
         <ul class="nav navbar-nav flex-row">
