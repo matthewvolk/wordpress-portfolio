@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="jumbotron jumbotron-fluid jumbotron-post-page py-5" style="background-color:black; background-position: center;">
   <div class="container">
     <div class="padded-multiline">
-      <h1 class="display-5">
+      <h1>
         <?php the_title() ?>
       </h1>
     </div>

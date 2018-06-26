@@ -261,6 +261,10 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div {
   text-align: center;
 } 
 
+body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 > div > div > h1 {
+  font-weight: 600;
+}
+
  body > div.jumbotron.jumbotron-fluid.jumbotron-post-page.py-5 {
   /* display: inline;
   background: #000; */
