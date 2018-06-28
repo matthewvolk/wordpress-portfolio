@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
 <head>
+
+  <!-- Meta -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Title -->
   <title>
     <?php is_front_page() ? bloginfo('description') : wp_title(''); ?> |
     <?php bloginfo('name'); ?>
   </title>
+
+  <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <!-- Relative stylesheets -->
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch.png" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <!-- Open Graph Protocol for link previews in texts and social media posts -->
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
                   <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
         endif; 
   ?>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105119151-2"></script>
   <script>
@@ -27,9 +40,9 @@
   gtag('config', 'UA-105119151-2');
   </script>
 
-  
-
+  <!-- END HEAD -->
   <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
