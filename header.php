@@ -26,7 +26,9 @@
   <!-- Open Graph Protocol for link previews in texts and social media posts -->
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
-                  <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />';
+                  <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />
+                  <meta property="og:description" content="Matthew Volk | Learning Software"/>
+                  <meta property="og:url" content="//www.mjvolk.com/" />';
         endif; 
   ?>
 
