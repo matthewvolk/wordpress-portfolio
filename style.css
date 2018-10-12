@@ -6825,6 +6825,13 @@ a:hover {
 .bg-black {
   background-color: #000; }
 
+.btn-black {
+  color: white;
+  background-color: black; }
+
+.btn-black:hover {
+  color: white; }
+
 .ml-6,
 .mx-6 {
   margin-left: 4.25rem !important; }
@@ -6843,11 +6850,11 @@ a:hover {
 #post-container pre {
   overflow-x: auto;
   margin: 1.5em 0 3em;
-  padding: 20px;
+  padding: 10px;
   max-width: 100%;
   border: 1px solid #000;
   color: #e5eff5;
-  font-size: .90rem;
+  font-size: .85rem;
   line-height: 1.5em;
   background: #0e0f11;
   border-radius: 5px;
@@ -6859,19 +6866,19 @@ a:hover {
 ::-moz-selection {
   /* Code for Firefox */
   color: #000;
-  background: #b4d7ec; }
+  background: #dceefa; }
 
 ::selection {
   color: #000;
-  background: #b4d7ec; }
+  background: #dceefa; }
 
 /* ==========================================================================
    Navigation
    ========================================================================== */
 body > nav {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
 
 #collapsingNavbar2 > ul > li.nav-item > a {
   font-size: 1em;
@@ -6940,9 +6947,9 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
 
 body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > h1 {
   font-weight: 700; }
@@ -6979,7 +6986,7 @@ body > div.container > div.row > div.col-sm-6 > div.card {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 38px rgba(39, 44, 49, 0.16);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
@@ -6996,7 +7003,7 @@ body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card
   text-decoration: underline; }
 
 body > div.container > div.row > div.col-sm-6 > div.card:hover {
-  box-shadow: 0 0px 45px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 38px rgba(39, 44, 49, 0.2);
   -webkit-transform: scale(1.01);
   transform: scale(1.01); }
 
@@ -7037,18 +7044,6 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page {
   box-decoration-break: clone;
   color: #fff;
   font-family: 'Nunito Sans', sans-serif; */ }
-
-body > div.container > div > div > div > div > a {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.35em;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #000000;
-  text-align: center;
-  position: relative; }
 
 /* ----------------------------
    Post Page Content Container

@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="jumbotron jumbotron-fluid jumbotron-post-page mb-0 pt-4 pb-4 bg-light text-center">
   <div class="container">
     <div class="padded-multiline pt-3 pb-1">
-      <p><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo get_the_category()[0]->cat_name ?></span></p>
+      <p><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo ucfirst(get_the_category()[0]->cat_name) ?></span></p>
       <h1>
         <?php the_title() ?>
       </h1>

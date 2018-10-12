@@ -30,14 +30,20 @@
             <div class="col-sm-6">
                 <div class="card mb-4">
                     <a href="<?php the_permalink() ?>"><img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>"></a>
+                    
                     <div class="card-body">
+                        <a href="<?php the_permalink() ?>" class="small text-muted mb-0" style="text-decoration: none"> #<?php echo get_the_category()[0]->cat_name ?> </a>
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
-                        <p class="card-text">
+                        <a href="<?php the_permalink() ?>" class="text-body" style="text-decoration: none">
                             <?php
                                 if (has_excerpt()) { echo get_the_excerpt(); } else { echo wp_trim_words(get_the_content(), 18); }
                             ?>    
-                        </p>
-                        <a href="<?php the_permalink() ?>" class="btn btn-dark">Read More</a>
+                        </a>
+                        <br />
+                        <div class="d-flex justify-content-between">
+                            <a href="<?php the_permalink() ?>" class="btn btn-black btn-sm mt-3">Read More</a> 
+                            <span class="mt-4 align-text-bottom text-muted text-right"><?php echo min_read(); ?> min read</span>
+                        </div>
                     </div>
                 </div>
             </div>
