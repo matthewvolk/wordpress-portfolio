@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <a href="<?php the_permalink() ?>" class="small text-muted mb-0" style="text-decoration: none"> #<?php echo get_the_category()[0]->cat_name ?> </a>
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
-                        <a href="<?php the_permalink() ?>" class="text-body" style="text-decoration: none">
+                        <a href="<?php the_permalink() ?>" class="" style="text-decoration: none; color: #2a2b2c">
                             <?php
                                 if (has_excerpt()) { echo get_the_excerpt(); } else { echo wp_trim_words(get_the_content(), 18); }
                             ?>    
