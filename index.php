@@ -19,7 +19,7 @@ get_header(); ?>
 </div>
 
 
-<div id="post-container" class="container-post-page">
+<div id="post-container" class="container-post-page mt-4">
 
   <?php  
     if (have_posts()) :
