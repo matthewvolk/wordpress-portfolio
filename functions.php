@@ -16,7 +16,7 @@ function min_read() {
 \*------------------*/
 
 function mjvolk_resources() {
-    wp_enqueue_style('style', get_stylesheet_uri(), array(), '3');
+    wp_enqueue_style('style', get_stylesheet_uri(), array(), '4');
 }
 
 /*------------------*\
