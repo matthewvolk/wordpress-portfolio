@@ -5,15 +5,15 @@
     <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I write software using the following technologies:</p>
     <i class="devicon-javascript-plain px-2 py-2"></i>
-    <i class="devicon-react-original px-2 py-2"></i>
+    <i class="devicon-java-plain-wordmark px-2 py-2"></i>
+    <i class="devicon-php-plain px-2 py-2"></i>
+    <i class="devicon-python-plain px-2 py-2"></i>
     <i class="devicon-nodejs-plain px-2 py-2"></i>
     <i class="devicon-express-original px-2 py-2"></i>
-    <i class="devicon-python-plain px-2 py-2"></i>
+    <i class="devicon-react-original px-2 py-2"></i>
     <i class="devicon-linux-plain px-2 py-2"></i>
     <i class="devicon-git-plain px-2 py-2"></i>
     <i class="devicon-gulp-plain px-2 py-2"></i>
-    <i class="devicon-babel-plain px-2 py-2"></i>
-    <i class="devicon-amazonwebservices-original px-2 py-2"></i>
     <i class="devicon-ruby-plain-wordmark px-2 py-2"></i>
     <i class="devicon-rails-plain-wordmark px-2 py-2"></i>
 
@@ -42,7 +42,7 @@
                         <br />
                         <div class="d-flex justify-content-between">
                             <a href="<?php the_permalink() ?>" class="btn btn-black btn-sm mt-3">Read More</a> 
-                            <span class="mt-4 align-text-bottom text-muted text-right"><?php echo min_read(); ?> min read</span>
+                            <span class="mt-4 align-text-bottom text-muted text-right text-uppercase small"><?php echo min_read(); ?> min read</span>
                         </div>
                     </div>
                 </div>
