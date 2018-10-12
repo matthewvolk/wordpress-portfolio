@@ -5,12 +5,15 @@
 get_header(); ?>
 
 
-<div class="jumbotron jumbotron-fluid jumbotron-post-page" style="background-color:black; background-position: center;">
+<div class="jumbotron jumbotron-fluid jumbotron-post-page mb-0 pt-5 pb-4 bg-white text-center">
   <div class="container">
-    <div class="padded-multiline">
+    <div class="padded-multiline pt-3 pb-1">
+      <p><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo get_the_category()[0]->cat_name ?></span></p>
       <h1>
         <?php the_title() ?>
       </h1>
+      <p><span class="text-primary">Matthew Volk</span></p>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="mjvlk" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </div>
