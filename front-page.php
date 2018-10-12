@@ -42,7 +42,7 @@
                         <br />
                         <div class="d-flex justify-content-between">
                             <a href="<?php the_permalink() ?>" class="btn btn-black btn-sm mt-3">Read More</a> 
-                            <span class="mt-4 align-text-bottom text-muted text-right text-uppercase small"><?php echo min_read(); ?> min read</span>
+                            <span class="mt-4 align-text-bottom text-muted text-right text-uppercase small"><?php echo min_read(); /* Edit this function in functions.php */ ?> min read</span> 
                         </div>
                     </div>
                 </div>

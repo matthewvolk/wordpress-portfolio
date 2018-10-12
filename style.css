@@ -7003,9 +7003,6 @@ body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card
   color: #000;
   text-decoration: none; }
 
-body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title > a:hover {
-  text-decoration: underline; }
-
 body > div.container > div.row > div.col-sm-6 > div.card:hover {
   box-shadow: 0px 15px 38px rgba(39, 44, 49, 0.2);
   -webkit-transform: scale(1.01);
