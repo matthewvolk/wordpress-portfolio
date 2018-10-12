@@ -6813,6 +6813,15 @@ a.text-dark:hover, a.text-dark:focus {
 /* ==========================================================================
   Bootstrap Overrides/Addons
   ========================================================================== */
+a {
+  color: #1A94E0; }
+
+a:hover {
+  color: #1883c5; }
+
+.text-primary {
+  color: #1A94E0 !important; }
+
 .bg-black {
   background-color: #000; }
 
@@ -6845,11 +6854,11 @@ a.text-dark:hover, a.text-dark:focus {
 ::-moz-selection {
   /* Code for Firefox */
   color: #000;
-  background: #ffff00; }
+  background: #b4d7ec; }
 
 ::selection {
   color: #000;
-  background: #ffff00; }
+  background: #b4d7ec; }
 
 /* ==========================================================================
    Navigation

@@ -40,6 +40,18 @@ Text Domain: mjvolk
   Bootstrap Overrides/Addons
   ========================================================================== */
 
+a {
+  color: #1A94E0;
+}
+
+a:hover {
+  color: #1883c5;
+}
+
+.text-primary {
+  color: #1A94E0 !important;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -75,12 +87,12 @@ Text Domain: mjvolk
 
 ::-moz-selection { /* Code for Firefox */
   color: #000;
-  background: #ffff00;
+  background: rgb(180, 215, 236);
 }
 
 ::selection {
   color: #000; 
-  background: #ffff00;
+  background: rgb(180, 215, 236);
 }
 
 /* ==========================================================================
