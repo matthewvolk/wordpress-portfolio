@@ -50,7 +50,7 @@
 <body <?php body_class(); ?>>
 
 
-<nav class="navbar navbar-dark navbar-expand sticky-top bg-dark py-0 my-0 mx-0">
+<nav class="navbar navbar-dark navbar-expand sticky-top bg-black py-0 my-0 mx-0">
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
         <ul class="navbar-nav ml-7">
