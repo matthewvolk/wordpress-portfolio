@@ -26,7 +26,7 @@
   <!-- Open Graph Protocol for link previews in texts and social media posts -->
   <?php if ( is_front_page() ):
             echo '<meta property="og:title" content="Matthew Volk | Learning Software" />
-                  <meta property="og:image" content="http://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />
+                  <meta property="og:image" content="https://mjvolk.com/wp-content/themes/mjvolk/img/open-graph.png" />
                   <meta property="og:description" content="Matthew Volk | Learning Software"/>
                   <meta property="og:url" content="//www.mjvolk.com/" />';
         endif; 
@@ -58,7 +58,7 @@
                 <a class="nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthewJuly2018.pdf">Resumé</a>
+                <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
             </li>
         </ul>
         <ul class="nav navbar-nav flex-row">
