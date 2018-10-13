@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4">
+<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-black">
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I build websites using the following technologies:</p>
@@ -16,8 +16,6 @@
     <i class="devicon-gulp-plain px-2 py-2"></i>
     <i class="devicon-ruby-plain-wordmark px-2 py-2"></i>
     <i class="devicon-rails-plain-wordmark px-2 py-2"></i>
-
-
   </div>
 </div>
 
@@ -33,8 +31,8 @@
                     
                     <div class="card-body pt-2">
                         <div class="d-flex justify-content-between my-2">
-                            <a href="<?php the_permalink() ?>" class="small text-muted" style="text-decoration: none;"> #<?php echo get_the_category()[0]->cat_name ?> </a>
-                            <span class="badge badge-light"><i class="fas fa-tags"></i> <?php echo ucfirst(get_post_type( get_the_ID())) ?>s</span>
+                            <a href="<?php the_permalink() ?>" class="badge badge-light"> #<?php echo get_the_category()[0]->cat_name ?></a>
+                            <span class="small text-muted" style="text-decoration: none;"><i class="fas fa-tags"></i> <?php echo ucfirst(get_post_type( get_the_ID())) ?>s</span>
                         </div>
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
                         <a href="<?php the_permalink() ?>" class="" style="text-decoration: none; color: #2a2b2c">
@@ -45,7 +43,7 @@
                         <br />
                         <div class="d-flex justify-content-between">
                             <a href="<?php the_permalink() ?>" class="btn btn-black btn-sm mt-3">Read More</a> 
-                            <span class="mt-4 align-text-bottom text-muted text-right text-uppercase small"><?php echo min_read(); /* Edit this function in functions.php */ ?> min read</span> 
+                            <a href="<?php the_permalink() ?>" class="mt-4 align-text-bottom text-muted text-right text-uppercase small" style="text-decoration: none;"><?php echo min_read(); /* Edit this function in functions.php */ ?> min read</a> 
                         </div>
                     </div>
                 </div>

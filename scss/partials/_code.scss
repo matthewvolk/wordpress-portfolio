@@ -1,0 +1,21 @@
+#post-container kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: .90rem;
+  color: #e5eff5;
+  background-color: rgba(0, 0, 0, 0.851);
+  border-radius: 0.2rem;
+}
+
+#post-container pre {
+  overflow-x: auto;
+  margin: 1.5em 0 3em;
+  padding: 10px;
+  max-width: 100%;
+  border: 1px solid #000;
+  color: #e5eff5;
+  font-size: .85rem;
+  line-height: 1.5em;
+  background: #0e0f11;
+  border-radius: 5px;
+  font-family: monospace, monospace;
+}

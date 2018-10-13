@@ -49,12 +49,12 @@
 <body <?php body_class(); ?>>
 
 
-<nav class="navbar navbar-dark navbar-expand sticky-top bg-black py-0 my-0 mx-0">
+<nav class="navbar navbar-dark navbar-expand sticky-top bg-black box-shadow py-0 my-0 mx-0">
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
         <ul class="navbar-nav ml-7">
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo home_url(); ?>">Home</a>
+                <a class="nav-link mid-nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
