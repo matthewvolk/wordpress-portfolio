@@ -31,8 +31,8 @@
                 <div class="card mb-4">
                     <a href="<?php the_permalink() ?>"><img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>"></a>
                     
-                    <div class="card-body">
-                        <a href="<?php the_permalink() ?>" class="small text-muted mb-0" style="text-decoration: none"> #<?php echo get_the_category()[0]->cat_name ?> </a>
+                    <div class="card-body pt-2">
+                        <a href="<?php the_permalink() ?>" class="small text-muted mb-3" style="text-decoration: none; line-height: 2rem;"> #<?php echo get_the_category()[0]->cat_name ?> </a>
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
                         <a href="<?php the_permalink() ?>" class="" style="text-decoration: none; color: #2a2b2c">
                             <?php
