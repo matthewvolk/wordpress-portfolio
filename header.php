@@ -62,8 +62,8 @@
             </li>
         </ul>
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item"><a class="nav-link" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </div>
 </nav>
