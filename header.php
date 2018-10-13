@@ -9,8 +9,7 @@
 
   <!-- Title -->
   <title>
-    <?php is_front_page() ? bloginfo('description') : wp_title(''); ?> |
-    <?php bloginfo('name'); ?>
+    <?php is_front_page() ? bloginfo('description') : wp_title(''); ?> | <?php bloginfo('name'); ?>
   </title>
 
   <!-- Font Awesome -->
