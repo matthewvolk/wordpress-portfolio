@@ -27,7 +27,12 @@ function mjvolk_post_types() {
   register_post_type('project', array(
     'public' => true,
     'labels' => array(
-      'name' => 'Projects'
+      'name' => 'Projects',
+      'add_new_item' => 'Add New Project',
+      'edit_item' => 'Edit Project',
+      'all_items' => 'All Projects',
+      'singular_name' => 'Project',
+      'view_item' => 'View Project',
     ),
     'menu_icon' => 'dashicons-media-interactive'
   ));

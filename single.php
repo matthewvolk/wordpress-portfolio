@@ -10,7 +10,10 @@ get_header(); ?>
       <h1>
         <?php the_title() ?>
       </h1>
-      <p><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo ucfirst(get_the_category()[0]->cat_name) ?></span></p>
+      <a href="<?php echo home_url(); ?>">
+        <img class="rounded-circle mb-2" style="max-height: 40px" src="<?php echo esc_url( get_avatar_url( wp_get_current_user()->ID ) ); ?>" />
+      </a>
+      <p class="mb-3"><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo ucfirst(get_the_category()[0]->cat_name) ?></span></p>
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="mjvlk" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
