@@ -20,17 +20,31 @@ function mjvolk_resources() {
 }
 
 /*------------------*\
+  Post Types
+\*------------------*/
+
+function mjvolk_post_types() {
+  register_post_type('project', array(
+    'public' => true,
+    'labels' => array(
+      'name' => 'Projects'
+    ),
+    'menu_icon' => 'dashicons-media-interactive'
+  ));
+}
+
+/*------------------*\
   Actions
 \*------------------*/
 
+// Scripts/Styles
 add_action('wp_enqueue_scripts', 'mjvolk_resources');
+
+// Post Types
+add_action('init', 'mjvolk_post_types');
 
 /*------------------*\
   Theme Support
 \*------------------*/
 
 add_theme_support( 'post-thumbnails' );
-
-
-
-?>
