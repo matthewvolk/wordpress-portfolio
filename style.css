@@ -6870,11 +6870,11 @@ a {
 ::-moz-selection {
   /* Code for Firefox */
   color: #000;
-  background: #dceefa; }
+  background: #ffee00; }
 
 ::selection {
   color: #000;
-  background: #dceefa; }
+  background: #ffee00; }
 
 /* ==========================================================================
    Navigation
