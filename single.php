@@ -11,7 +11,8 @@ get_header(); ?>
         <?php the_title() ?>
       </h1>
       <a href="<?php echo home_url(); ?>">
-        <img class="rounded-circle mb-2" style="max-height: 40px" src="<?php echo esc_url( get_avatar_url( wp_get_current_user()->ID ) ); ?>" />
+        <img class="rounded-circle mb-2" style="max-height: 40px" src="https://0.gravatar.com/avatar/01c25b1dbbdfee4c7bb58f4f87ba15e7?s=128&d=mm&r=g" />
+        <!-- <?php /* echo */ esc_url( get_avatar_url( wp_get_current_user()->ID ) ); ?> -->
       </a>
       <p class="mb-3"><span class="text-primary"><?php echo get_the_date('M j, Y'); ?></span> / <span class="text-primary"><?php echo ucfirst(get_the_category()[0]->cat_name) ?></span></p>
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="mjvlk" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
