@@ -26,7 +26,7 @@ get_header(); ?>
 </div>
 
 
-<div id="post-container" class="container-post-page mt-4">
+<div id="post-content-container" class="single-post-container mt-4">
 
   <?php  
     if (have_posts()) :
@@ -39,6 +39,8 @@ get_header(); ?>
     else :
       echo '<p>Oops! No content found</p>';
   endif; ?>
+
+</div>
 
 <?php 
 

@@ -23,7 +23,6 @@ Text Domain: mjvolk
 /* ====================================== *\
   Imports
 \* ====================================== */
-/* IMPORT THIS FIRST: Boostrap 4.1.3 */
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -5274,6 +5273,7 @@ button.bg-dark:focus {
 
 @supports (position: sticky) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -6808,8 +6808,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-/* Google Fonts */
-/* Local Partials */
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: .90rem;
@@ -6857,7 +6855,7 @@ footer {
     color: white; }
 
 /* ====================================== *\
-  Bootstrap Overrides/Utility Add Ons
+  Bootstrap Overrides
 \* ====================================== */
 a {
   color: #1A94E0; }
@@ -6867,15 +6865,17 @@ a {
 .text-primary {
   color: #1A94E0 !important; }
 
+/* ====================================== *\
+  Bootstrap Add Ons
+\* ====================================== */
 .bg-black {
   background-color: #000; }
 
 .btn-black {
   color: white;
   background-color: #222222; }
-
-.btn-black:hover {
-  color: white; }
+  .btn-black:hover {
+    color: white; }
 
 .ml-6,
 .mx-6 {
@@ -6885,55 +6885,41 @@ a {
 .mx-7 {
   margin-left: 4.5rem !important; }
 
+/* ====================================== *\
+  Utilities
+\* ====================================== */
 .box-shadow {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
 
 /* ====================================== *\
-   Navigation
+   Main Navigation
 \* ====================================== */
-nav {
-  font-size: 1em;
-  font-family: 'Nunito Sans', sans-serif;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0px 0px 0px 1px transparent;
-  position: relative;
-  overflow: hidden; }
-
-#collapsingNavbar2 > ul.navbar-nav.ml-5 > li.nav-item > a:hover {
-  color: #fff; }
-
-#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a {
+.navbar-dark .navbar-nav .nav-link {
   color: white; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+    text-decoration: underline; }
 
-#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a:hover {
-  text-decoration: underline; }
-
-#collapsingNavbar2 > ul.nav.navbar-nav.flex-row > li > a {
+#social-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.5em;
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
-
-#collapsingNavbar2 > ul.nav.navbar-nav.flex-row > li > a:hover {
-  color: #fff;
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+  #social-nav .nav-link:hover {
+    color: #fff;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
 /* ====================================== *\
-   Jumbotron
+   Front Page Jumbotron
 \* ====================================== */
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
+.jumbotron-front-page {
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
@@ -6941,13 +6927,13 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > h1 {
+.jumbotron-front-page h1 {
   font-weight: 700; }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > p {
+.jumbotron-first-page p {
   font-weight: 300; }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page > div > i {
+.jumbotron-front-page i {
   font-size: 2em;
   display: inline-block;
   vertical-align: middle;
@@ -6956,17 +6942,16 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-front-page > div > i {
   box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
-
-body > div.jumbotron.jumbotron-fluid > div > i:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+  .jumbotron-front-page i:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
 /* ====================================== *\
-   Post Loop Formatting
+   Post Loop
 \* ====================================== */
-body > div.container > div.row > div.col-sm-6 > div.card {
+.post-loop .card {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -6981,57 +6966,51 @@ body > div.container > div.row > div.col-sm-6 > div.card {
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform; }
+  .post-loop .card:hover {
+    box-shadow: 0px 15px 38px rgba(39, 44, 49, 0.2);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01); }
 
-body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title {
-  font-weight: 700; }
-
-body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title > a {
+.post-loop .card .card-title a {
+  font-weight: 700;
   color: #000;
   text-decoration: none; }
 
-body > div.container > div.row > div.col-sm-6 > div.card:hover {
-  box-shadow: 0px 15px 38px rgba(39, 44, 49, 0.2);
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01); }
-
-body > div.container > div > div.col-sm-6 > div > a > img {
+.post-loop .card a img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px; }
 
-/* ---------------------------- *\
-   Post Page Header Text
-\* ---------------------------- */
-body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
+/* ====================================== *\
+   Single Post
+\* ====================================== */
+.jumbotron-post-page h1 {
   font-weight: 600; }
 
 @media (max-width: 576px) {
-  body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
+  .jumbotron-post-page h1 {
     font-size: 2rem;
     font-weight: 600; } }
-/* ---------------------------- *\
-   Post Page Content Container
-\* ---------------------------- */
-#post-container {
+#post-content-container {
   font-family: 'Nunito Sans', sans-serif;
   word-wrap: break-word; }
 
-#post-container h1 {
+#post-content-container h1 {
   font-weight: 700; }
 
-#post-container h2 {
+#post-content-container h2 {
   font-weight: 700; }
 
-#post-container img {
+#post-content-container img {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.35); }
 
-.container-post-page {
+#post-content-container {
   width: 100%;
   padding: 15px 15px 30px 15px;
   margin-right: auto;
@@ -7039,16 +7018,10 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
   font-size: 1.15rem; }
 
 @media (min-width: 576px) {
-  .container-post-page {
-    max-width: 540px; } }
-@media (min-width: 768px) {
-  .container-post-page {
-    max-width: 540px; } }
-@media (min-width: 992px) {
-  .container-post-page {
+  #post-content-container {
     max-width: 540px; } }
 @media (min-width: 1200px) {
-  .container-post-page {
+  #post-content-container {
     max-width: 720px; } }
 
 /*# sourceMappingURL=style.css.map */

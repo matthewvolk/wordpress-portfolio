@@ -60,9 +60,14 @@
                 <a class="nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
             </li>
         </ul>
-        <ul class="nav navbar-nav flex-row">
+        <ul class="nav navbar-nav flex-row" id="social-nav">
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
+            <!-- <div class="burger">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+            </div> -->
         </ul>
     </div>
 </nav>

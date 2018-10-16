@@ -27,22 +27,21 @@ Text Domain: mjvolk
   Imports
 \* ====================================== */
 
-/* IMPORT THIS FIRST: Boostrap 4.1.3 */
+// IMPORT THIS FIRST: Boostrap 4.1.3
 @import './bootstrap-4.1.3/bootstrap.scss';
 
-/* Google Fonts */
+// Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700|PT+Serif');
 
-/* Local Partials */
+// Partials
 @import './partials/code';
 @import './partials/selection';
-
 @import './partials/footer';
 
 
 /* ====================================== *\
-  Bootstrap Overrides/Utility Add Ons
+  Bootstrap Overrides
 \* ====================================== */
 
 a {
@@ -57,6 +56,11 @@ a {
   color: #1A94E0 !important;
 }
 
+/* ====================================== *\
+  Bootstrap Add Ons
+\* ====================================== */
+
+
 .bg-black {
   background-color: #000;
 }
@@ -64,10 +68,10 @@ a {
 .btn-black {
   color:white;
   background-color: #222222;
-}
 
-.btn-black:hover {
-  color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .ml-6,
@@ -80,6 +84,10 @@ a {
   margin-left: 4.5rem !important; 
 }
 
+/* ====================================== *\
+  Utilities
+\* ====================================== */
+
 .box-shadow {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
@@ -87,57 +95,44 @@ a {
 }
 
 /* ====================================== *\
-   Navigation
+   Main Navigation
 \* ====================================== */
 
-nav {
-  font-size: 1em;
-  font-family: 'Nunito Sans', sans-serif;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0px 0px 0px 1px transparent;
-  position: relative;
-  overflow: hidden;
-} 
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 
-#collapsingNavbar2 > ul.navbar-nav.ml-5 > li.nav-item > a:hover {
-  color: #fff;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
-#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a {
-  color: rgb(255, 255, 255);
-}
-
-#collapsingNavbar2 > ul.navbar-nav.ml-7 > li > a:hover {
-  text-decoration: underline;
-}
-
-#collapsingNavbar2 > ul.nav.navbar-nav.flex-row > li > a {
+#social-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.5em;
-  display: inline-block;
-  vertical-align: middle;
+
+  // Bouncy Animation
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+
+  &:hover {
+    color: #fff;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
 }
 
-#collapsingNavbar2 > ul.nav.navbar-nav.flex-row > li > a:hover {
-  color: #fff;
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
+// Menu Overlay: https://codepen.io/ettrics/pen/JoaaxW
 
 /* ====================================== *\
-   Jumbotron
+   Front Page Jumbotron
 \* ====================================== */
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
+.jumbotron-front-page {
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
@@ -147,16 +142,16 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-front-page {
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > h1 {
+.jumbotron-front-page h1 {
   font-weight: 700;
 }
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page.pt-1.pb-4 > div > p {
+.jumbotron-first-page p {
   font-weight: 300;
 }
 
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-front-page > div > i {
+.jumbotron-front-page i {
   font-size: 2em;
   display: inline-block;
   vertical-align: middle;
@@ -165,21 +160,20 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-front-page > div > i {
   box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-}
 
-body > div.jumbotron.jumbotron-fluid > div > i:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  &:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
 }
-
 
 /* ====================================== *\
-   Post Loop Formatting
+   Post Loop
 \* ====================================== */
 
-body > div.container > div.row > div.col-sm-6 > div.card {
+.post-loop .card {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -196,24 +190,21 @@ body > div.container > div.row > div.col-sm-6 > div.card {
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
+
+  &:hover {
+    box-shadow: 0px 15px 38px rgba(39,44,49,.2);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
 }
 
-body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title {
+.post-loop .card .card-title a {
   font-weight: 700;
-}
-
-body > div.container > div.row > div.col-sm-6 > div.card > div.card-body > .card-title > a {
   color: #000;
   text-decoration: none;
 }
 
-body > div.container > div.row > div.col-sm-6 > div.card:hover {
-  box-shadow: 0px 15px 38px rgba(39,44,49,.2);
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01);
-}
-
-body > div.container > div > div.col-sm-6 > div > a > img {
+.post-loop .card a img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px 10px 0px 0px;
@@ -221,39 +212,35 @@ body > div.container > div > div.col-sm-6 > div > a > img {
   -webkit-border-radius: 10px 10px 0px 0px;
 }
 
-/* ---------------------------- *\
-   Post Page Header Text
-\* ---------------------------- */
+/* ====================================== *\
+   Single Post
+\* ====================================== */
 
-body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
+.jumbotron-post-page h1 {
   font-weight: 600;
 }
 
 @media (max-width: 576px) { 
-  body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
+  .jumbotron-post-page h1 {
     font-size: 2rem;
     font-weight: 600;
   }
 }
-  
-/* ---------------------------- *\
-   Post Page Content Container
-\* ---------------------------- */
 
-#post-container {
+#post-content-container {
   font-family: 'Nunito Sans', sans-serif;
   word-wrap: break-word;
 }
 
-#post-container h1 {
+#post-content-container h1 {
   font-weight: 700;
 }
 
-#post-container h2 {
+#post-content-container h2 {
   font-weight: 700;
 }
 
-#post-container img {
+#post-content-container img {
 	width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.35);
@@ -261,22 +248,24 @@ body > div.jumbotron.jumbotron-fluid.jumbotron-post-page > div > div > h1 {
   box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.35);
 }
 
-.container-post-page {
-width: 100%;
-padding: 15px 15px 30px 15px;
-margin-right: auto;
-margin-left: auto;
-font-size: 1.15rem; }
+#post-content-container {
+  width: 100%;
+  padding: 15px 15px 30px 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.15rem; 
+}
+
 @media (min-width: 576px) {
-  .container-post-page {
-    max-width: 540px; } }
-@media (min-width: 768px) {
-  .container-post-page {
-    max-width: 540px; } }
-@media (min-width: 992px) {
-  .container-post-page {
-    max-width: 540px; } }
+  #post-content-container {
+    max-width: 540px; 
+  } 
+}
+
 @media (min-width: 1200px) {
-  .container-post-page {
-    max-width: 720px; } }
+  #post-content-container {
+    max-width: 720px; 
+  } 
+}
+
 
