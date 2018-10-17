@@ -11,6 +11,12 @@ function min_read() {
     return $min_read;
 }
 
+// Favicon for Login and Admin
+function add_admin_favicon() {
+  $favicon_url = get_stylesheet_directory_uri() . '/favicon.png';
+  echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
+}
+
 /*------------------*\
   Static Files
 \*------------------*/
@@ -53,3 +59,7 @@ add_action('init', 'mjvolk_post_types');
 \*------------------*/
 
 add_theme_support( 'post-thumbnails' );
+
+// Favicon for Admin and Login
+add_action('login_head', 'add_favicon');
+add_action('admin_head', 'add_favicon');
