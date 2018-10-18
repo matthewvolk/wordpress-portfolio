@@ -127,6 +127,83 @@ a {
 }
 
 // Menu Overlay: https://codepen.io/ettrics/pen/JoaaxW
+@mixin easeOut {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 10;
+  transform: rotateY(0);
+  @include easeOut;
+
+  &__patty {
+    width: 28px;
+    height: 2px;
+    margin: 0 0 4px 0;
+    background: white;
+    @include easeOut;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // transform burger into 'x'
+  &--close {
+    transform: rotate(180deg);
+    
+    .burger__patty {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px);
+      }
+    }
+  }
+}
+
+.overlaymenu {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  width: 100%;
+  transform: translate3d(0, -100%, 0);
+  height: 100vh;
+  margin-left: -1rem;
+  @include easeOut;
+
+  &--open {
+    margin-left: -1rem;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 15% 25%;
+  }
+
+  &__item {
+    transform: translate3d(16500px, 0, 0);
+    color: white;
+    padding: 1rem;
+    z-index: 20;
+    @include easeOut;
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+      color: white;
+      z-index: 20;
+    }
+  }
+}
 
 /* ====================================== *\
    Front Page Jumbotron
