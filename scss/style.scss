@@ -181,28 +181,6 @@ a {
     margin-left: -1rem;
     transform: translate3d(0, 0, 0);
   }
-
-  &__list {
-    display: flex;
-    list-style: none;
-    flex-flow: column wrap;
-    text-align: center;
-    padding: 15% 25%;
-  }
-
-  &__item {
-    transform: translate3d(16500px, 0, 0);
-    color: white;
-    padding: 1rem;
-    z-index: 20;
-    @include easeOut;
-
-    &--active {
-      transform: translate3d(0, 0, 0);
-      color: white;
-      z-index: 20;
-    }
-  }
 }
 
 /* ====================================== *\

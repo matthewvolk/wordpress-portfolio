@@ -53,8 +53,8 @@
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
 
-        <ul class="navbar-nav ml-7">
-        <!-- <ul class="navbar-nav ml-4"> -->
+        <!-- <ul class="navbar-nav ml-7"> -->
+        <ul class="navbar-nav ml-4">
 
             <li class="nav-item">
                 <a class="nav-link mid-nav-link" href="<?php echo home_url(); ?>">Home</a>
@@ -64,23 +64,19 @@
             </li>
         </ul>
 
-        <ul class="nav navbar-nav flex-row" id="social-nav">
+        <!-- <ul class="nav navbar-nav flex-row" id="social-nav">
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
+        </ul> -->
 
-        <!-- <div class="burger">
+        <div class="burger">
             <div class="burger__patty"></div>
             <div class="burger__patty"></div>
             <div class="burger__patty"></div>
         </div>
         <div class="overlaymenu">
-            <ul class="overlaymenu__list">
-                <li class="overlaymenu__item h1">Test</li>
-                <li class="overlaymenu__item h1">Test</li>
-                <li class="overlaymenu__item h1">Test</li>
-            </ul>
-        </div> -->
+            
+        </div>
 
     </div>
 </nav>
