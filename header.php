@@ -54,8 +54,6 @@
         <div><!--placeholder to evenly space flexbox items and center links--></div>
 
         <ul class="navbar-nav ml-7">
-        <!-- <ul class="navbar-nav ml-4"> -->
-
             <li class="nav-item">
                 <a class="nav-link mid-nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
@@ -68,38 +66,6 @@
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
         </ul>
-
-        <!-- <div class="burger">
-            <div class="burger__patty"></div>
-            <div class="burger__patty"></div>
-            <div class="burger__patty"></div>
-        </div>
-        <div class="overlaymenu">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm">
-                        <img class="overlaymenu__img" src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" alt="">
-                    </div>
-                    <div class="col-sm">
-                        <ul class="overlaymenu__list">
-                            <li class="overlaymenu__item"><a href="<?php echo home_url(); ?>" class="overlaymenu__link">Home</a></li>
-                            <li class="overlaymenu__item"><a href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf" class="overlaymenu__link">Resumé</a></li>
-                            <li class="overlaymenu__item"><a href="<?php echo home_url(); ?>" class="overlaymenu__link">Work</a></li>
-                            <li class="overlaymenu__item"><a href="<?php echo home_url(); ?>" class="overlaymenu__link">Blog</a></li>
-                            <li class="overlaymenu__item"><a href="<?php echo home_url(); ?>" class="overlaymenu__link">Resources</a></li>
-                            <li class="overlaymenu__item"><a href="<?php echo home_url(); ?>" class="overlaymenu__link">The Levels Challenge</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul class="overlaymenu__sociallist">
-                            <li class="overlaymeny__socialitem"><a class="overlaymenu__sociallink" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
-                            <li class="overlaymeny__socialitem"><a class="overlaymenu__sociallink" target="_blank" href="https://twitter.com/mjvlk"><i class="fab fa-twitter"></i></a></li>
-                            <li class="overlaymeny__socialitem"><a class="overlaymenu__sociallink" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
     </div>
 </nav>
