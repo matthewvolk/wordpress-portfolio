@@ -24,7 +24,7 @@ function add_admin_favicon() {
 function mjvolk_resources() {
     $burger_uri = get_template_directory_uri() . '/js/burger.js';
 
-    wp_enqueue_style('style', get_stylesheet_uri(), array(), '9');
+    wp_enqueue_style('style', get_stylesheet_uri(), array(), '10');
     wp_enqueue_script('burger', $burger_uri, array(), false, true);
 }
 
