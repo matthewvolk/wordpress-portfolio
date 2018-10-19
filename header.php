@@ -31,6 +31,10 @@
         endif; 
   ?>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105119151-2"></script>
   <script>
@@ -49,11 +53,16 @@
 <body <?php body_class(); ?>>
 
 
-<nav class="navbar navbar-dark navbar-expand sticky-top bg-black box-shadow py-0 my-0 mx-0">
-    <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
-        <div><!--placeholder to evenly space flexbox items and center links--></div>
+<!-- <nav class="navbar navbar-inverse navbar-dark navbar-expand sticky-top bg-black box-shadow py-0 my-0 mx-0">
 
-        <ul class="navbar-nav ml-7">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar">
+        <div>placeholder to evenly space flexbox items and center links</div>
+
+        <ul class="navbar-nav ml-4">
             <li class="nav-item">
                 <a class="nav-link mid-nav-link" href="<?php echo home_url(); ?>">Home</a>
             </li>
@@ -62,13 +71,39 @@
             </li>
         </ul>
 
-        <ul class="nav navbar-nav flex-row" id="social-nav">
-            <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
+        <ul class="nav navbar-nav flex-row d-lg-none" id="social-nav">
+            <li class="nav-item pr-1"><a class="nav-link" target="_blank" href="https://github.com/matthewvolk"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item pl-1"><a class="nav-link" target="_blank" href="https://linkedin.com/in/mjvolk"><i class="fab fa-linkedin"></i></a></li>
         </ul>
 
     </div>
-</nav>
+</nav> -->
 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-between box-shadow">
+    <div class="d-lg-none mr-7"></div>
+    <a class="navbar-brand d-lg-none" href="#">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+    </button>
+    <div class="d-md-flex d-block w-100">
+        <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarResponsive">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
+                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
+                <a class="navbar-brand mx-3 d-none d-md-inline" href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+                </a>
+                <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
+                <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
 

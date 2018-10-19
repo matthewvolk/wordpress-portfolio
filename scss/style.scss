@@ -84,6 +84,10 @@ a {
   margin-left: 4.5rem !important; 
 }
 
+.mr-7 {
+  margin-right: 4.5rem !important; 
+}
+
 /* ====================================== *\
   Utilities
 \* ====================================== */
@@ -125,6 +129,64 @@ a {
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   }
 }
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+
+  &:focus {
+    outline: none;
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+
+    &:nth-child(2) {
+      width: 16px;
+      transition: ease all .2s;
+    }
+  }
+
+  .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  &:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  &:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+  }
+}
+
 
 /* ====================================== *\
    Front Page Jumbotron
