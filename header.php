@@ -80,9 +80,9 @@
 </nav> -->
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-between box-shadow">
-    <div class="d-lg-none mr-7"></div>
-    <a class="navbar-brand d-lg-none" href="#">
+<nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top justify-content-between box-shadow">
+    <div class="d-md-none mr-6"></div>
+    <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
     </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

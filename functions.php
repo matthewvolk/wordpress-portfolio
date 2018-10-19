@@ -22,7 +22,7 @@ function add_admin_favicon() {
 \*------------------*/
 
 function mjvolk_resources() {
-    wp_enqueue_style('style', get_stylesheet_uri(), array(), '10');
+    wp_enqueue_style('style', get_stylesheet_uri(), array(), '13');
 }
 
 /*------------------*\

@@ -6881,6 +6881,9 @@ a {
 .mx-6 {
   margin-left: 4.25rem !important; }
 
+.mr-6 {
+  margin-right: 4.25rem !important; }
+
 .ml-7,
 .mx-7 {
   margin-left: 4.5rem !important; }
@@ -6955,6 +6958,14 @@ a {
     transform: rotate(-45deg) translate(4px, -4px);
     transition: ease all .2s; }
 
+@media (max-width: 767px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+
+  .navbar .navbar-collapse {
+    text-align: center; } }
 /* ====================================== *\
    Front Page Jumbotron
 \* ====================================== */
