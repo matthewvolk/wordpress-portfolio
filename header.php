@@ -52,7 +52,48 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top justify-content-between box-shadow">
 
+    <!-- This div is invisible unless viewport is <= tablet, and acts as a spacer to center nav-brand.
+        Change the mr- class to push the nav-brand left and right -->
+    <div class="d-md-none mr-6"></div>
+
+    <!-- The nav-brand that is only visible if viewport is <= tablet. -->
+    <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+    </a>
+
+    <!-- The hamburger menu -->
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+    </button>
+
+    <!-- Main navigation visible when viewport is > tablet -->
+    <div class="d-md-flex d-block w-100">
+        <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarResponsive">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
+                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
+                <a class="navbar-brand mx-3 d-none d-md-inline" href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+                </a>
+                <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
+                <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Navigation -->
+</nav>
+
+
+
+
+<!-- OLD NAVIGATION -->
 <!-- <nav class="navbar navbar-inverse navbar-dark navbar-expand sticky-top bg-black box-shadow py-0 my-0 mx-0">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,32 +119,3 @@
 
     </div>
 </nav> -->
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top justify-content-between box-shadow">
-    <div class="d-md-none mr-6"></div>
-    <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
-    </a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-        <span class="sr-only">Toggle navigation</span>
-    </button>
-    <div class="d-md-flex d-block w-100">
-        <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarResponsive">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
-                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
-                <a class="navbar-brand mx-3 d-none d-md-inline" href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
-                </a>
-                <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
-                <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-

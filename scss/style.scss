@@ -106,6 +106,7 @@ a {
    Main Navigation
 \* ====================================== */
 
+// Navigation Link Color and Hover Style
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 
@@ -115,6 +116,7 @@ a {
   }
 }
 
+// Bouncy Social Links
 #social-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.5em;
@@ -134,6 +136,7 @@ a {
   }
 }
 
+// CSS to style hamburger menu collapse
 .navbar-toggler {
   border: none;
   background: transparent !important;
@@ -191,6 +194,7 @@ a {
   }
 }
 
+// Center Navbar Dropdown Content if viewport < tablet (tablet = 768px)
 @media (max-width: 767px) {
   .navbar .navbar-nav {
       display: inline-block;
