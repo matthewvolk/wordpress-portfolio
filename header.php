@@ -56,12 +56,13 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top justify-content-between box-shadow">
 
     <!-- This div is invisible unless viewport is <= tablet, and acts as a spacer to center nav-brand.
-        Change the mr- class to push the nav-brand left and right -->
-    <div class="d-md-none mr-6"></div>
+        Change the mr- class to push the nav-brand left and right. Uncomment to center nav-brand -->
+    <!-- <div class="d-md-none mr-6"></div> -->
 
     <!-- The nav-brand that is only visible if viewport is <= tablet. -->
     <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/navbar-brand.png" class="rounded pt-0" alt="Site Logo" width="45" height="45"> -->
+        <i class="fas fa-code mt-2" style="color: white; font-size: 1.55rem;"></i>
     </a>
 
     <!-- The hamburger menu -->
@@ -78,8 +79,9 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
                 <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
-                <a class="navbar-brand mx-3 d-none d-md-inline" href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" class="rounded" alt="Site Logo" width="30" height="30">
+                <a class="navbar-brand mx-3 pt-0 d-none d-md-inline" href="<?php echo home_url(); ?>">
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/navbar-brand.png" class="rounded pt-0" alt="Site Logo" width="45" height="45"> -->
+                    <i class="fas fa-code mt-2" style="color: white; font-size: 1.55rem;"></i>
                 </a>
                 <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
                 <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
