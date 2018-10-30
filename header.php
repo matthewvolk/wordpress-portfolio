@@ -61,8 +61,7 @@
 
     <!-- The nav-brand that is only visible if viewport is <= tablet. -->
     <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/navbar-brand.png" class="rounded pt-0" alt="Site Logo" width="45" height="45"> -->
-        <i class="fas fa-code mt-2" style="color: white; font-size: 1.55rem;"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0 ml-1" alt="Site Logo" width="35" height="35">
     </a>
 
     <!-- The hamburger menu -->
@@ -80,8 +79,7 @@
                 <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
                 <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeSept2018.pdf">Resumé</a>
                 <a class="navbar-brand mx-3 pt-0 d-none d-md-inline" href="<?php echo home_url(); ?>">
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/navbar-brand.png" class="rounded pt-0" alt="Site Logo" width="45" height="45"> -->
-                    <i class="fas fa-code mt-2" style="color: white; font-size: 1.55rem;"></i>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0" alt="Site Logo" width="40" height="40">
                 </a>
                 <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
                 <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
