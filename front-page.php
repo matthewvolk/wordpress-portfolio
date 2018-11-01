@@ -4,13 +4,13 @@
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I build websites using the following technologies:</p>
+    <i class="devicon-nodejs-plain px-2 py-2"></i>
     <i class="devicon-javascript-plain px-2 py-2"></i>
     <i class="devicon-php-plain px-2 py-2"></i>
-    <i class="devicon-python-plain px-2 py-2"></i>
-    <i class="devicon-nodejs-plain px-2 py-2"></i>
-    <i class="devicon-express-original px-2 py-2"></i>
     <i class="devicon-ruby-plain-wordmark px-2 py-2"></i>
     <i class="devicon-rails-plain-wordmark px-2 py-2"></i>
+    <i class="devicon-python-plain px-2 py-2"></i>
+    <i class="devicon-express-original px-2 py-2"></i>
     <i class="devicon-linux-plain px-2 py-2"></i>
     <i class="devicon-git-plain px-2 py-2"></i>
     <i class="devicon-gulp-plain px-2 py-2"></i>
