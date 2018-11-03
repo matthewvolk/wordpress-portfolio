@@ -36,7 +36,7 @@
                         <div class="d-flex justify-content-between my-2">
                             <a href="<?php the_permalink() ?>" class="badge badge-light"> #<?php echo get_the_category()[0]->cat_name ?></a>
                             <span class="small text-muted" style="text-decoration: none;">
-                                <i class="fas fa-tags"></i> <?php echo ucfirst(get_post_type( get_the_ID())) ?>s
+                                <i class="fas fa-tags"></i> <?php echo ucfirst(get_post_type( get_the_ID())) ?>s <!-- Keep 's' to pluralize post type -->
                             </span>
                         </div>
 
