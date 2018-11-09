@@ -78,11 +78,13 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
                 <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeOct2018.pdf">Resumé</a>
+                <a class="nav-item nav-link" href="mailto:volkmattj@gmail.com">Contact</a>
                 <a class="navbar-brand mx-3 pt-0 d-none d-md-inline" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0" alt="Site Logo" width="40" height="40">
                 </a>
                 <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
                 <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
+                <a class="nav-item nav-link" target="_blank" href="https://twitter.com/mjvlk">Twitter</a>
             </div>
         </div>
     </div>
