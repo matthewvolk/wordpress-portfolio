@@ -3,11 +3,11 @@
 /*------------------*\
   Utilities
 \*------------------*/
+
 /**
  * Minutes Read function
  * 
- * Use this function while in a post loop to return an integer representing
- * the number of minutes it would take to read the length of the 
+ * Returnnumber of minutes it would take to read the length of the 
  * word count assuming a read speed of at least 200 words per minute.
  * 
  * @param none
@@ -60,6 +60,7 @@ function mjvolk_resources() {
  * @return void
  */
 function mjvolk_post_types() {
+
   register_post_type('project', array(
     'public' => true,
     'labels' => array(
@@ -72,6 +73,7 @@ function mjvolk_post_types() {
     ),
     'menu_icon' => 'dashicons-media-interactive'
   ));
+
 }
 
 /*------------------*\

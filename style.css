@@ -6858,7 +6858,12 @@ footer {
   Sandbox
 \* ====================================== */
 #post-sort-container a:hover {
-  color: #444; }
+  color: #000;
+  border-bottom: 3px solid black;
+  text-decoration: none; }
+
+.active-post-type {
+  border-bottom: 3px solid black; }
 
 /* ====================================== *\
   Bootstrap Overrides
