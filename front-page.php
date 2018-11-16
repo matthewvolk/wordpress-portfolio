@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-black">
+<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-black mb-4">
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
-    <p class="lead">I'm a project manager + web developer using the following technologies:</p>
+    <p class="lead">I'm a project manager and web developer using the following technologies:</p>
     <!-- <p class="lead">Project manager + web developer using the following technologies:</p> -->
     <i class="devicon-javascript-plain px-2 py-2"></i>
     <i class="devicon-nodejs-plain px-2 py-2"></i>
@@ -21,6 +21,13 @@
 </div>
 
 <div class="container post-loop">
+
+    <div id="post-sort-container" class="container text-center mb-4">
+        <a href="#" class="h4 mx-3" style="font-weight:700;">Posts</a>
+        <a href="#" class="h4 mx-3" style="font-weight:700;">Projects</a>
+        <a href="#" class="h4 mx-3" style="font-weight:700;">All</a>
+    </div>
+
     <div class="row">
     <?php 
         if (have_posts()) :

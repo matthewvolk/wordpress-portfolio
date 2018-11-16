@@ -39,6 +39,17 @@ Text Domain: mjvolk
 @import './partials/selection';
 @import './partials/footer';
 
+/* ====================================== *\
+  Sandbox
+\* ====================================== */
+
+#post-sort-container a {
+  
+  &:hover {
+    color: #444;
+  }
+}
+
 
 /* ====================================== *\
   Bootstrap Overrides
@@ -59,7 +70,6 @@ a {
 /* ====================================== *\
   Bootstrap Add Ons
 \* ====================================== */
-
 
 .bg-black {
   background-color: #000;
