@@ -6857,7 +6857,7 @@ footer {
 /* ====================================== *\
   Sandbox
 \* ====================================== */
-#post-sort-container a:hover {
+.post-sort-container a:hover {
   color: #000;
   border-bottom: 3px solid black;
   text-decoration: none; }

@@ -39,13 +39,15 @@ function add_admin_favicon() {
 
 function mjvolk_resources() {
 
-    /**
-     * @param String $handle (Required) Name of stylesheet you want to load
-     * @param String $src (Optional) Full URL of the stylesheet, or path of the stylesheet relative to the WordPress root directory. Default Value: ""
-     * @param Array $deps (Optional) An array of registered stylesheet handles this stylesheet depends on. Default Value: array()
-     * @param String $version (Optional) String specifying stylesheet version number, if it has one, which is added to the URL as a query string for cache busting purposes. Default Value: false
-     */
+    $js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'js/custom.js' ));
+    $css_ver = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'style.css' ));
+
+    wp_deregister_script('jquery');
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), null, true);
+
     wp_enqueue_style('style', get_stylesheet_uri(), array(), '13');
+    wp_enqueue_script('postSort', get_template_directory_uri() . '/js/postSort.js', array(), '1');
+
 }
 
 /*------------------*\

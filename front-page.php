@@ -22,7 +22,7 @@
 
 <div class="container post-loop">
 
-    <div id="post-sort-container" class="container text-center mb-4">
+    <div class="post-sort-container text-center mb-4">
         <a href="#" class="h5 mx-3 post-type-link" style="font-weight:700;">Posts</a>
         <a href="#" class="h5 mx-3 post-type-link" style="font-weight:700;">Projects</a>
         <a href="#" class="h5 mx-3 post-type-link active-post-type" style="font-weight:700;">All</a>
