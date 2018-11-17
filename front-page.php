@@ -23,21 +23,26 @@
 <div class="container post-loop">
 
     <div class="post-sort-container text-center mb-4">
-        <a href="#" class="h5 mx-3 post-type-link" style="font-weight:700;">Posts</a>
-        <a href="#" class="h5 mx-3 post-type-link" style="font-weight:700;">Portfolio</a>
-        <a href="#" class="h5 mx-3 post-type-link active-post-type" style="font-weight:700;">All</a>
+        <a href="#" data-post-type="post" class="h5 mx-3 post-type-link" style="font-weight:700;">Posts</a>
+        <a href="#" data-post-type="project" class="h5 mx-3 post-type-link" style="font-weight:700;">Projects</a>
+        <a href="#" data-post-type="post project" class="h5 mx-3 post-type-link active-post-type" style="font-weight:700;">All</a>
     </div>
 
-    <pre>
+    <!-- <pre>
         <?php 
             print_r(get_post_type_object('project'))
         ?>
-    </pre>
+    </pre> -->
 
     <div class="row">
     <?php 
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
+
+        $homepagePosts = new WP_Query(array(
+            'post_type' => array('post', 'project')
+        ));
+
+        if ($homepagePosts->have_posts()) :
+            while ($homepagePosts->have_posts()) : $homepagePosts->the_post(); ?>
 
             <div class="col-sm-6">
                 <div class="card mb-4">
@@ -77,7 +82,11 @@
         endwhile;
         else :
         echo '<p class="ml-auto mr-auto">Nothing here yet, come back soon!</p>';
-    endif; ?>
+    endif; 
+    
+    wp_reset_query();
+
+    ?>
 
 </div>
 </div>

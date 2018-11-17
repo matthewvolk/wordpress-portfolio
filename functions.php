@@ -73,9 +73,22 @@ function mjvolk_post_types() {
       'singular_name' => 'Project',
       'view_item' => 'View Project',
     ),
-    'menu_icon' => 'dashicons-media-interactive'
+    'menu_icon' => 'dashicons-media-interactive',
+    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+    'taxonomies' => array( 'category' ),
+    'show_in_rest' => true,
+    'rest_base' => 'projects',
+  	'rest_controller_class' => 'WP_REST_Posts_Controller'
   ));
 
+}
+
+/*------------------*\
+  Rest API
+\*------------------*/
+
+function homepage_post_types_rest_api() {
+  register_rest_field();
 }
 
 /*------------------*\
@@ -87,6 +100,9 @@ add_action('wp_enqueue_scripts', 'mjvolk_resources');
 
 // Post Types
 add_action('init', 'mjvolk_post_types');
+
+// Post Sorting AJAX
+// add_action('rest_api_init', 'homepage_post_types_rest_api');
 
 /*------------------*\
   Theme Support
