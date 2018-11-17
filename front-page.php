@@ -28,6 +28,12 @@
         <a href="#" class="h5 mx-3 post-type-link active-post-type" style="font-weight:700;">All</a>
     </div>
 
+    <pre>
+        <?php 
+            print_r(get_post_type_object('project'))
+        ?>
+    </pre>
+
     <div class="row">
     <?php 
         if (have_posts()) :
