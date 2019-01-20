@@ -39,7 +39,7 @@ function add_admin_favicon() {
 
 function mjvolk_resources() {
 
-    $js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'js/custom.js' ));
+    $js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'js/postSort.js' ));
     $css_ver = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'style.css' ));
 
     wp_deregister_script('jquery');
