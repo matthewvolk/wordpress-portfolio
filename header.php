@@ -61,7 +61,7 @@
 
     <!-- The nav-brand that is only visible if viewport is <= tablet. -->
     <a class="navbar-brand d-md-none" href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0 ml-1" alt="Site Logo" width="35" height="35">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0" alt="Site Logo" width="35" height="35">
     </a>
 
     <!-- The hamburger menu -->
