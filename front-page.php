@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-black">
+<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-dark">
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
     <p class="lead">I'm a project manager + web developer using the following technologies:</p>

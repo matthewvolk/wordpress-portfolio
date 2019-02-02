@@ -53,7 +53,7 @@
 <body <?php body_class(); ?>>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top justify-content-between box-shadow">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top justify-content-between">
 
     <!-- This div is invisible unless viewport is <= tablet, and acts as a spacer to center nav-brand.
         Change the mr- class to push the nav-brand left and right. Uncomment to center nav-brand -->
@@ -96,7 +96,7 @@
 
 
 <!-- OLD NAVIGATION -->
-<!-- <nav class="navbar navbar-inverse navbar-dark navbar-expand sticky-top bg-black box-shadow py-0 my-0 mx-0">
+<!-- <nav class="navbar navbar-inverse navbar-dark navbar-expand sticky-top bg-dark box-shadow py-0 my-0 mx-0">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
