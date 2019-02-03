@@ -58,7 +58,7 @@
 <body <?php body_class(); ?>>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top justify-content-between box-shadow">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top justify-content-between">
 
     <!-- This div is invisible unless viewport is <= tablet, and acts as a spacer to center nav-brand.
         Change the mr- class to push the nav-brand left and right. Uncomment to center nav-brand -->
@@ -82,7 +82,7 @@
         <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarResponsive">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
-                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeNov2018.pdf">Resumé</a>
+                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ResumeFeb2019.pdf">Resumé</a>
                 <a class="nav-item nav-link" href="mailto:volkmattj@gmail.com">Contact</a>
                 <a class="navbar-brand mx-3 pt-0 d-none d-md-inline" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0" alt="Site Logo" width="40" height="40">

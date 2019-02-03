@@ -1,6 +1,6 @@
 </div> <!-- Main Container -->
   
-  <footer class="site-footer mt-2 mb-0 pb-1">
+  <footer class="site-footer mt-2 mb-0 pb-1 bg-dark">
     <div class="container-fluid d-flex justify-content-between mb-0">
       <p class="mb-0 small">
         &copy; Matthew Volk, <?php echo date('Y'); ?>
