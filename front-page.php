@@ -1,22 +1,20 @@
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-black mb-4">
+<div class="jumbotron jumbotron-fluid jumbotron-front-page pt-1 pb-4 bg-dark mb-4">
   <div class="container">
     <h1 class="display-5">My name's Matt.</h1>
-    <p class="lead">I'm a project manager and web developer using the following technologies:</p>
-    <!-- <p class="lead">Project manager + web developer using the following technologies:</p> -->
-    <i class="devicon-javascript-plain px-2 py-2"></i>
-    <i class="devicon-nodejs-plain px-2 py-2"></i>
-    <i class="devicon-php-plain px-2 py-2"></i>
-    <i class="devicon-ruby-plain-wordmark px-2 py-2"></i>
-    <i class="devicon-rails-plain-wordmark px-2 py-2"></i>
-    <i class="devicon-python-plain px-2 py-2"></i>
-    <i class="devicon-express-original px-2 py-2"></i>
-    <i class="devicon-linux-plain px-2 py-2"></i>
-    <i class="devicon-git-plain px-2 py-2"></i>
-    <i class="devicon-gulp-plain px-2 py-2"></i>
-    <i class="devicon-react-original px-2 py-2"></i>
-    <i class="devicon-java-plain-wordmark px-2 py-2"></i>
+    <p class="lead">San Diego based project manager + web developer using the following technologies:</p>
+
+    <i class="devicon-javascript-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Javascript ES5/6/7"></i>
+    <i class="devicon-nodejs-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
+    <i class="devicon-php-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="PHP"></i>
+    <i class="devicon-python-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Python"></i>
+    <i class="devicon-express-original px-2 py-2" data-toggle="tooltip" data-placement="top" title="Express.js"></i>
+    <i class="devicon-linux-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Linux"></i>
+    <i class="devicon-git-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Git"></i>
+    <i class="devicon-gulp-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Gulp.js"></i>
+    <i class="devicon-react-original px-2 py-2" data-toggle="tooltip" data-placement="top" title="React.js"></i>
+    <i class="devicon-java-plain-wordmark px-2 py-2" data-toggle="tooltip" data-placement="top" title="Java"></i>
   </div>
 </div>
 
