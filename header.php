@@ -97,9 +97,6 @@
     <!-- End Navigation -->
 </nav>
 
-
-
-
 <!-- OLD NAVIGATION -->
 <!-- <nav class="navbar navbar-inverse navbar-dark navbar-expand sticky-top bg-dark box-shadow py-0 my-0 mx-0">
 
