@@ -4,7 +4,7 @@
   <div class="container">
   
     <h1 class="display-5">My name's Matt.</h1>
-    <p class="lead">San Diego based project manager + web developer using the following technologies:</p>
+    <p class="lead">Project manager + web developer working with the following technologies:</p>
 
     <i class="devicon-javascript-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Javascript ES5/6/7"></i>
     <i class="devicon-nodejs-plain px-2 py-2" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
