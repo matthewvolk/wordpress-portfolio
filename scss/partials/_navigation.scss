@@ -1,0 +1,104 @@
+/* ====================================== *\
+   Main Navigation
+\* ====================================== */
+
+// Navigation Link Color and Hover Style
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+// Bouncy Social Links
+#social-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5em;
+
+  // Bouncy Animation
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: #fff;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+}
+
+// CSS to style hamburger menu collapse
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+
+  &:focus {
+    outline: none;
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+
+    &:nth-child(2) {
+      width: 16px;
+      transition: ease all .2s;
+    }
+  }
+
+  .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  &:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  &:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+  }
+
+  &:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+  }
+}
+
+// Center Navbar Dropdown Content if viewport < tablet (tablet = 768px)
+@media (max-width: 767px) {
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+}
