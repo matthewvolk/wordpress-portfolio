@@ -89,7 +89,7 @@
                 </a>
                 <a class="nav-item nav-link" target="_blank" href="https://github.com/matthewvolk">GitHub</a>
                 <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/mjvolk">LinkedIn</a>
-                <a class="nav-item nav-link" target="_blank" href="https://twitter.com/mjvlk">Twitter</a>
+                <a class="nav-item nav-link" target="_blank" href="https://twitter.com/_mjvolk">Twitter</a>
             </div>
         </div>
     </div>
