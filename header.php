@@ -50,6 +50,18 @@
   gtag('config', 'UA-105119151-2');
   </script>
 
+  <!-- Hotjar Tracking Code for https://mjvolk.com -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1422317,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
   <!-- END HEAD -->
   <?php wp_head(); ?>
 
@@ -82,7 +94,7 @@
         <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarResponsive">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="<?php echo home_url(); ?>">Home</a>
-                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ProjectManager_ResumeApr2019.pdf">Resumé</a>
+                <a class="nav-item nav-link" href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/VolkMatthew_ProjectManager_ResumeSeptember2019.pdf">Resumé</a>
                 <a class="nav-item nav-link" href="mailto:volkmattj@gmail.com">Contact</a>
                 <a class="navbar-brand mx-3 pt-0 d-none d-md-inline" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="rounded pt-0" alt="Site Logo" width="40" height="40">
